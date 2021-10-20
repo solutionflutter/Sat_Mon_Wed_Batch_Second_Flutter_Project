@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:satmonwedsecondbatch/Follower_page.dart';
+import 'package:satmonwedsecondbatch/Following_page.dart';
+import 'package:satmonwedsecondbatch/Messanger_page.dart';
+import 'package:satmonwedsecondbatch/Posts_page.dart';
 import 'package:satmonwedsecondbatch/Splash_screen.dart';
 import 'package:satmonwedsecondbatch/edit_page.dart';
 
@@ -152,7 +156,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                 style: TextStyle(
                                   fontWeight: FontWeight.w500,
                                   fontStyle: FontStyle.normal,
-                                  fontSize: 18,
+                                  fontSize: 16,
                                   color: Color.fromRGBO(91, 79, 79, 1),
                                 ),
                               ),
@@ -163,11 +167,11 @@ class _ProfilePageState extends State<ProfilePage> {
                     ],
                   ),
                 ),
-                
+
                 // Bio Container
-                
+
                 Container(
-                  height: MediaQuery.of(context).size.height/3,
+                  height: MediaQuery.of(context).size.height/3.7,
                   width: MediaQuery.of(context).size.width,
                   child: Column(
                     //Bio text and create icon container
@@ -178,8 +182,8 @@ class _ProfilePageState extends State<ProfilePage> {
                         alignment: Alignment.centerLeft,
                         child: Container(
                           height: MediaQuery.of(context).size.height/10,
-                          width: MediaQuery.of(context).size.width/4,
-                          padding: EdgeInsets.symmetric(horizontal: 15),
+                          width: MediaQuery.of(context).size.width/3.7,
+                          padding: EdgeInsets.only(right: 20),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
@@ -189,13 +193,12 @@ class _ProfilePageState extends State<ProfilePage> {
                                   fontWeight: FontWeight.w700,
                                   fontStyle: FontStyle.normal,
                                   color: Color.fromRGBO(34, 38, 42, 1),
-                                  fontSize: 20,
+                                  fontSize: 15,
                                 ),
                               ),
-                              SizedBox(width: 15,),
                               Icon(
                                 CupertinoIcons.info_circle,
-                                size: 20,
+                                size: 15,
                                 color: Color.fromRGBO(35, 38, 45, 1),
                               ),
                             ],
@@ -206,7 +209,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       //Bio Container
 
                       Container(
-                        height: MediaQuery.of(context).size.height/5,
+                        height: MediaQuery.of(context).size.height/6,
                         width: MediaQuery.of(context).size.width,
                         padding: EdgeInsets.symmetric(horizontal: 15),
                         child: Text(
@@ -217,7 +220,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               "January 2009. She previously served as prime m"
                               "inister from June 1996 to July 2001.",
                           style: TextStyle(
-                            fontSize: 16,
+                            fontSize: 12,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.normal,
                             color: Color.fromRGBO(65, 55, 45, 1),
@@ -245,24 +248,24 @@ class _ProfilePageState extends State<ProfilePage> {
                         children: [
                           Icon(
                             Icons.calendar_today_sharp,
-                            size: 16,
+                            size: 12,
                             color: Color.fromRGBO(65, 63, 21, 1),
                           ),
-                          SizedBox(width: 15,),
+                          SizedBox(width: 10,),
                           Text(
                               "Born : ",
                             style: TextStyle(
                               fontStyle: FontStyle.normal,
-                              fontSize: 16,
+                              fontSize: 12,
                               fontWeight: FontWeight.w500,
                               color: Color.fromRGBO(65, 63, 21, 1),
                             ),
                           ),
-                          SizedBox(width: 15,),
+                          SizedBox(width: 10,),
                           Text(
                             "September 28, 1947 (age 75 years)",
                              style: TextStyle(
-                               fontSize: 16,
+                               fontSize: 12,
                                fontWeight: FontWeight.w500,
                                color: Color.fromRGBO(65, 63, 21, 1),
                                fontStyle: FontStyle.normal,
@@ -278,26 +281,26 @@ class _ProfilePageState extends State<ProfilePage> {
                         children: [
                           Icon(
                             Icons.person_outline,
-                            size: 16,
+                            size: 12,
                             color: Color.fromRGBO(102, 62, 32, 1),
                           ),
-                          SizedBox(width: 15,),
+                          SizedBox(width: 10,),
                           Text(
                             "Spouse: ",
                             style: TextStyle(
                               color: Color.fromRGBO(102, 62, 32, 1),
                               fontWeight: FontWeight.w500,
-                              fontSize: 16,
+                              fontSize: 12,
                               fontStyle: FontStyle.normal,
                             ),
                           ),
-                          SizedBox(width: 15,),
+                          SizedBox(width: 10,),
                           Text(
                             "M. A. Wazed Miah (m. 1967–2009)",
                             style: TextStyle(
                               color: Color.fromRGBO(102, 62, 32, 1),
                               fontWeight: FontWeight.w500,
-                              fontSize: 16,
+                              fontSize: 12,
                               fontStyle: FontStyle.normal,
                             ),
                           ),
@@ -310,26 +313,26 @@ class _ProfilePageState extends State<ProfilePage> {
                         children: [
                           Icon(
                             Icons.library_books_outlined,
-                            size: 16,
+                            size: 12,
                             color: Color.fromRGBO(122, 72, 12, 1),
                           ),
-                          SizedBox(width: 15,),
+                          SizedBox(width: 10,),
                           Text(
                             "Books: ",
                             style: TextStyle(
                               color: Color.fromRGBO(122, 72, 12, 1),
                               fontWeight: FontWeight.w500,
-                              fontSize: 16,
+                              fontSize: 12,
                               fontStyle: FontStyle.normal,
                             ),
                           ),
-                          SizedBox(width: 15,),
+                          SizedBox(width: 10,),
                           Text(
                             "People and Democracy",
                             style: TextStyle(
                               color: Color.fromRGBO(122, 72, 12, 1),
                               fontWeight: FontWeight.w500,
-                              fontSize: 16,
+                              fontSize: 12,
                               fontStyle: FontStyle.normal,
                             ),
                           ),
@@ -343,26 +346,26 @@ class _ProfilePageState extends State<ProfilePage> {
                         children: [
                           Icon(
                             Icons.person_add_alt,
-                            size: 16,
+                            size: 12,
                             color: Color.fromRGBO(142, 92, 74, 1),
                           ),
-                          SizedBox(width: 15,),
+                          SizedBox(width: 10,),
                           Text(
                             "Children: ",
                             style: TextStyle(
                               color: Color.fromRGBO(142, 92, 74, 1),
                               fontWeight: FontWeight.w500,
-                              fontSize: 16,
+                              fontSize: 12,
                               fontStyle: FontStyle.normal,
                             ),
                           ),
-                          SizedBox(width: 15,),
+                          SizedBox(width: 10,),
                           Text(
                             "Sajeeb Wazed, Saima Wazed",
                             style: TextStyle(
                               color: Color.fromRGBO(142, 92, 74, 1),
                               fontWeight: FontWeight.w500,
-                              fontSize: 16,
+                              fontSize: 12,
                               fontStyle: FontStyle.normal,
                             ),
                           ),
@@ -371,7 +374,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
                       //Education Wrap
                       Container(
-                        margin: EdgeInsets.only(right: 32),
+                        margin: EdgeInsets.only(right: 68),
                         child: Wrap(
                           runSpacing: 5,
                           alignment: WrapAlignment.start,
@@ -379,26 +382,26 @@ class _ProfilePageState extends State<ProfilePage> {
                           children: [
                             Icon(
                               Icons.bookmark_border,
-                              size: 16,
+                              size: 12,
                               color: Color.fromRGBO(142, 92, 74, 1),
                             ),
-                            SizedBox(width: 15,),
+                            SizedBox(width: 10,),
                             Text(
                               "Education: ",
                               style: TextStyle(
                                 color: Color.fromRGBO(142, 92, 74, 1),
                                 fontWeight: FontWeight.w500,
-                                fontSize: 16,
+                                fontSize: 12,
                                 fontStyle: FontStyle.normal,
                               ),
                             ),
-                            SizedBox(width: 15,),
+                            SizedBox(width: 10,),
                             Text(
                               " University of Dhaka (1973), Eden Mohila College",
                               style: TextStyle(
                                 color: Color.fromRGBO(142, 92, 74, 1),
                                 fontWeight: FontWeight.w500,
-                                fontSize: 16,
+                                fontSize: 12,
                                 fontStyle: FontStyle.normal,
                               ),
                             ),
@@ -409,7 +412,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       //Awards Wrap
 
                       Container(
-                        margin: EdgeInsets.only(right: 32),
+                        margin: EdgeInsets.only(right: 36),
                         child: Wrap(
                           runSpacing: 5,
                           alignment: WrapAlignment.start,
@@ -417,26 +420,26 @@ class _ProfilePageState extends State<ProfilePage> {
                           children: [
                             Icon(
                               Icons.bookmarks,
-                              size: 16,
+                              size: 12,
                               color: Color.fromRGBO(142, 92, 74, 1),
                             ),
-                            SizedBox(width: 15,),
+                            SizedBox(width: 10,),
                             Text(
                               "Awards: ",
                               style: TextStyle(
                                 color: Color.fromRGBO(142, 92, 74, 1),
                                 fontWeight: FontWeight.w500,
-                                fontSize: 16,
+                                fontSize: 12,
                                 fontStyle: FontStyle.normal,
                               ),
                             ),
-                            SizedBox(width: 15,),
+                            SizedBox(width: 10,),
                             Text(
                               " Indira Gandhi Prize, Glamour Award The Chosen Ones",
                               style: TextStyle(
                                 color: Color.fromRGBO(142, 92, 74, 1),
                                 fontWeight: FontWeight.w500,
-                                fontSize: 16,
+                                fontSize: 12,
                                 fontStyle: FontStyle.normal,
                               ),
                             ),
@@ -449,19 +452,21 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                 ),
 
+                //Button Container
+
                 Container(
                   height: MediaQuery.of(context).size.height/4,
                   width: MediaQuery.of(context).size.width,
-                  padding: EdgeInsets.only(top: 12,left: 15),
+                  padding: EdgeInsets.only(top: 30,),
                   child: Wrap(
                     direction: Axis.horizontal,
-                    //alignment: WrapAlignment.spaceEvenly,
+                    alignment: WrapAlignment.center,
                     spacing: 10,
                     runSpacing: 5,
                     children:[
                       Container(
                         height: MediaQuery.of(context).size.height/15,
-                        width: MediaQuery.of(context).size.width/3.6,
+                        width: MediaQuery.of(context).size.width/3.5,
                         decoration: BoxDecoration(
                           border: Border.all(
                             color: Color.fromRGBO(22, 22, 22, 1),
@@ -472,26 +477,33 @@ class _ProfilePageState extends State<ProfilePage> {
                           color: Color.fromRGBO(245, 245, 245, .5),
                         ),
                         child: FlatButton.icon(
-                            onPressed: (){},
+                            onPressed: (){
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context)=> MessangerPage(),
+                                ),
+                              );
+                            },
                             icon: Icon(
                               Icons.message_outlined,
-                              size: 12,
+                              size: 10,
                               color: Color.fromRGBO(22, 22, 22, 1),
                             ),
                             label: Text(
                                 "Messenger",
                               style: TextStyle(
                                 fontStyle: FontStyle.normal,
-                                fontWeight: FontWeight.w500,
+                                fontWeight: FontWeight.w400,
                                 color: Color.fromRGBO(22, 22, 22, 1),
-                                fontSize: 12
+                                fontSize: 10
                               ),
                             ),
                         ),
                       ),
                       Container(
                         height: MediaQuery.of(context).size.height/15,
-                        width: MediaQuery.of(context).size.width/3.7,
+                        width: MediaQuery.of(context).size.width/3.8,
                         decoration: BoxDecoration(
                           border: Border.all(
                             color: Color.fromRGBO(22, 22, 22, 1),
@@ -502,10 +514,17 @@ class _ProfilePageState extends State<ProfilePage> {
                           color: Color.fromRGBO(245, 245, 245, .5),
                         ),
                         child: FlatButton.icon(
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context)=>FollowerPage(),
+                              ),
+                            );
+                          },
                           icon: Icon(
                             Icons.follow_the_signs_rounded,
-                            size: 12,
+                            size: 10,
                             color: Color.fromRGBO(22, 22, 22, 1),
                           ),
                           label: Text(
@@ -514,7 +533,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               fontStyle: FontStyle.normal,
                               fontWeight: FontWeight.w500,
                               color: Color.fromRGBO(22, 22, 22, 1),
-                              fontSize: 12,
+                              fontSize: 10,
                             ),
                           ),
                         ),
@@ -532,10 +551,17 @@ class _ProfilePageState extends State<ProfilePage> {
                           color: Color.fromRGBO(245, 245, 245, .5),
                         ),
                         child: FlatButton.icon(
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context)=> FollowingPage(),
+                                ),
+                            );
+                          },
                           icon: Icon(
                             Icons.add_circle_outline,
-                            size: 12,
+                            size: 10,
                             color: Color.fromRGBO(22, 22, 22, 1),
                           ),
                           label: Text(
@@ -544,14 +570,14 @@ class _ProfilePageState extends State<ProfilePage> {
                               fontStyle: FontStyle.normal,
                               fontWeight: FontWeight.w500,
                               color: Color.fromRGBO(22, 22, 22, 1),
-                              fontSize: 12,
+                              fontSize: 10,
                             ),
                           ),
                         ),
                       ),
                       Container(
                         height: MediaQuery.of(context).size.height/15,
-                        width: MediaQuery.of(context).size.width/3.7,
+                        width: MediaQuery.of(context).size.width/4.2,
                         decoration: BoxDecoration(
                           border: Border.all(
                             color: Color.fromRGBO(22, 22, 22, 1),
@@ -562,10 +588,17 @@ class _ProfilePageState extends State<ProfilePage> {
                           color: Color.fromRGBO(245, 245, 245, .5),
                         ),
                         child: FlatButton.icon(
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context)=>PostsPage(),
+                              ),
+                            );
+                          },
                           icon: Icon(
                             Icons.post_add_outlined,
-                            size: 12,
+                            size: 10,
                             color: Color.fromRGBO(22, 22, 22, 1),
                           ),
                           label: Text(
@@ -574,7 +607,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               fontStyle: FontStyle.normal,
                               fontWeight: FontWeight.w500,
                               color: Color.fromRGBO(22, 22, 22, 1),
-                              fontSize: 12,
+                              fontSize: 10,
                             ),
                           ),
                         ),
