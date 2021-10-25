@@ -8,6 +8,7 @@ class PostModel{
     @required this.address,
     @required this.imageURl,
     @required this.userImageUrl,
+    @required this.likes,
   });
 
   String imageURl = "";
@@ -15,4 +16,5 @@ class PostModel{
   String caption = "";
   String username = "";
   String userImageUrl = "";
+  int likes = 0;
  }
