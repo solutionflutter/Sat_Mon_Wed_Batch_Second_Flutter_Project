@@ -1,6 +1,50 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:satmonwedsecondbatch/Models/models.dart';
 import 'package:satmonwedsecondbatch/profile_page.dart';
+
+List<Followingmodel> followingmodels = [
+  Followingmodel(
+      profileImageURL: "images/user_images/user_1.jpg",
+      date: DateTime.now().hour.toString(),
+      username: "Mosharraf Karim"),
+  Followingmodel(
+      profileImageURL: "images/user_images/user_2.jpg",
+      date: DateTime.now().hour.toString(),
+      username: "Chanchal Chowdhury"),
+  Followingmodel(
+      profileImageURL: "images/user_images/user_3.jpg",
+      date: DateTime.now().hour.toString(),
+      username: "Abdur Rajjak"),
+  Followingmodel(
+      profileImageURL: "images/user_images/user_4.jpg",
+      date: DateTime.now().hour.toString(),
+      username: "Afran Nisho"),
+  Followingmodel(
+      profileImageURL: "images/user_images/user_5.jpg",
+      date: DateTime.now().hour.toString(),
+      username: "Tawsif Mahbub"),
+  Followingmodel(
+      profileImageURL: "images/user_images/user_6.jpg",
+      date: DateTime.now().hour.toString(),
+      username: "Shakib Al Hasan"),
+  Followingmodel(
+      profileImageURL: "images/user_images/user_7.jpg",
+      date: DateTime.now().hour.toString(),
+      username: "Mehidy Hasan Miraz"),
+  Followingmodel(
+      profileImageURL: "images/user_images/user_8.jpg",
+      date: DateTime.now().hour.toString(),
+      username: "Mashrafe Bin Mortaza"),
+  Followingmodel(
+      profileImageURL: "images/user_images/user_9.jpg",
+      date: DateTime.now().hour.toString(),
+      username: "Jaya Ahsan"),
+  Followingmodel(
+      profileImageURL: "images/user_images/user_10.jpg",
+      date: DateTime.now().hour.toString(),
+      username: "Mushfiqur Rahim"),
+];
 
 class FollowingPage extends StatefulWidget {
   const FollowingPage({Key key}) : super(key: key);
@@ -20,17 +64,17 @@ class _FollowingPageState extends State<FollowingPage> {
             color: Color.fromRGBO(24, 24, 35, .6),
           ),
           iconSize: 20,
-          onPressed: (){
+          onPressed: () {
             Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context)=>ProfilePage(),
-                ),
+              context,
+              MaterialPageRoute(
+                builder: (context) => ProfilePage(),
+              ),
             );
           },
         ),
         title: Text(
-            "Following",
+          "Following",
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w700,
@@ -45,17 +89,34 @@ class _FollowingPageState extends State<FollowingPage> {
               color: Color.fromRGBO(24, 24, 35, .6),
             ),
             iconSize: 20,
-            onPressed: (){
+            onPressed: () {
               Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context)=>FollowingPage(),
-                  ),
+                context,
+                MaterialPageRoute(
+                  builder: (context) => FollowingPage(),
+                ),
               );
             },
           )
         ],
         backgroundColor: Color.fromRGBO(240, 240, 240, .6),
+      ),
+      body: Align(
+        alignment: Alignment.centerLeft,
+        child: ListView.builder(
+          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+          itemCount: followingmodels.length,
+          itemBuilder: (BuildContext context, int index) {
+            return Container(
+              margin: EdgeInsets.symmetric(vertical: 12),
+              height: MediaQuery.of(context).size.height / 10,
+              width: MediaQuery.of(context).size.width,
+              child: Row(
+                children: [],
+              ),
+            );
+          },
+        ),
       ),
     );
   }
