@@ -113,43 +113,40 @@ class _FollowingPageState extends State<FollowingPage> {
               width: MediaQuery.of(context).size.width,
               child: Row(
                 children: [
-
                   //profile image circle avatar
                   CircleAvatar(
                     radius: 35,
-                    backgroundImage: AssetImage("${followingmodels[index].profileImageURL}"),
+                    backgroundImage:
+                        AssetImage("${followingmodels[index].profileImageURL}"),
                   ),
 
                   //Container name and date
 
                   Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 12),
-                      child: RichText(
-                        textAlign: TextAlign.start,
-                        text: TextSpan(
-                          text: "${followingmodels[index].username}\n",
-                          style: TextStyle(
-                            fontWeight: FontWeight.w700,
-                            color: Color.fromRGBO(0,0,0,0.6),
-                            fontSize: 16,
-                            height: 1.2,
-                          ),
-                          children: [
-                            TextSpan(
-                              text: "${followingmodels[index].date}",
-                              style: TextStyle(
+                      child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    child: RichText(
+                      textAlign: TextAlign.start,
+                      text: TextSpan(
+                        text: "${followingmodels[index].username}\n",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w700,
+                          color: Color.fromRGBO(0, 0, 0, 0.6),
+                          fontSize: 16,
+                          height: 1.2,
+                        ),
+                        children: [
+                          TextSpan(
+                            text: "${followingmodels[index].date}",
+                            style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 color: Color.fromRGBO(0, 0, 0, .4),
-                                fontSize: 12
-                              ),
-                            )
-                          ],
-                        ),
+                                fontSize: 12),
+                          )
+                        ],
                       ),
-                    )
-                  ),
-
+                    ),
+                  )),
                 ],
               ),
             );
